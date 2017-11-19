@@ -14,6 +14,8 @@ using namespace std;
 
 void readAndStore(ifstream& fin, HashTable& ht, BST<Book>& bst);
 void promptUser();
+void addItem(HashTable& ht, BST<Book>& bst);
+
 
 int main(){
 
@@ -57,6 +59,7 @@ int main(){
 
     		else
     		{
+    			cin.ignore();
     			switch(userInput)
     			{
     			case 1:
@@ -67,6 +70,7 @@ int main(){
     			}
     			case 2:
     			{
+    				addItem(ht, bst);
     				break;
     			}
     			case 3:
@@ -79,7 +83,7 @@ int main(){
     			}
     			case 5:
     			{
-    				cout << endl << "Happy Reading" << endl;
+    				cout << endl << "Happy Reading!!!" << endl;
     				break;
     			}
     			}
@@ -119,6 +123,8 @@ void readAndStore(ifstream& fin, HashTable& ht, BST<Book>& bst)
 
 }
 
+
+
 void promptUser()
 {
 	cout << endl;
@@ -132,3 +138,28 @@ void promptUser()
 	cout << "Enter your choice: ";
 }
 
+
+
+void addItem(HashTable& ht, BST<Book>& bst)
+{
+    string title, author, buf;
+    double price;
+    unsigned isbn;
+
+	cout << "Enter the title: ";
+	getline(cin, title);
+	cout << "Enter the author: ";
+	getline(cin, author);
+	cout << "Enter the price: ";
+	getline(cin, buf);
+	price = stod(buf);
+	cout << "Enter the isbn: ";
+	getline(cin, buf);
+	isbn = stoi(buf);
+
+	Book newBook(title, author, price, isbn);
+	ht.insert(newBook);
+	bst.insert(newBook);
+	cout << title << " has been added to the catalogue" << endl << endl;
+	cin.ignore();
+}
