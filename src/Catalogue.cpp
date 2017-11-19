@@ -61,6 +61,8 @@ int main(){
     			{
     			case 1:
     			{
+    				cout << "Here is an alphabetical list of the books in our catalogue:" << endl << endl;
+    				bst.inOrderPrint(cout);
     				break;
     			}
     			case 2:
@@ -92,6 +94,10 @@ int main(){
     fin.close();
     return 0;
 }
+
+
+
+
 
 void readAndStore(ifstream& fin, HashTable& ht, BST<Book>& bst)
 {
