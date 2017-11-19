@@ -1,0 +1,697 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf100
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fnil\fcharset0 LucidaGrande;\f2\fnil\fcharset0 LucidaGrande-Bold;
+\f3\fmodern\fcharset0 CourierNewPSMT;\f4\fmodern\fcharset0 CourierNewPS-BoldMT;}
+{\colortbl;\red255\green255\blue255;\red39\green14\blue98;\red38\green38\blue38;\red0\green0\blue0;
+\red83\green83\blue83;\red69\green46\blue92;\red52\green52\blue52;}
+{\*\expandedcolortbl;;\cssrgb\c20784\c10980\c45882;\cssrgb\c20000\c20000\c20000;\cssrgb\c0\c0\c0;
+\cssrgb\c40000\c40000\c40000;\cssrgb\c34510\c24706\c43529;\cssrgb\c26667\c26667\c26667;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{circle\}}{\leveltext\leveltemplateid102\'01\uc0\u9702 ;}{\levelnumbers;}\fi-360\li1440\lin1440 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid201\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid301\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid401\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs64 \cf2 \expnd0\expndtw0\kerning0
+Lab 8: BST and Hash Tables Part 2 (100 pts)\
+\
+\pard\pardeftab720\partightenfactor0
+
+\i\b0\fs48 \cf2 Due Tuesday, November 21 at 11:20am on Canvas\
+\pard\pardeftab720\partightenfactor0
+
+\i0\fs64 \cf2 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs26\fsmilli13333 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b\fs48 \cf2 \ul \ulc2 Pair Programming Extra Credit Opportunity (5 pts)\ulnone \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\fs36 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+If you and/or your partner has not done so already, watch the video and answer the questions on this {\field{\*\fldinst{HYPERLINK "https://docs.google.com/document/d/1z1djhzG8zPOTVpQxr0YKnS58xwjzAcv1zZXVFh3r7jM/edit?usp=sharing"}}{\fldrslt \cf5 \ul \ulc5 worksheet}} (only one time per quarter).
+\f1\b0\fs26\fsmilli13333 \cf3 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f2\b\fs36 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Both partners fill in, sign and date the {\field{\*\fldinst{HYPERLINK "https://docs.google.com/document/d/1KYdbv-LGAkP5k6eAzSQzg92IkuFmfFrhh3Se2oFohuc/edit?usp=sharing"}}{\fldrslt \cf5 \ul \ulc5 pair programming contract}} (once per assignment).
+\f1\b0\fs26\fsmilli13333 \cf3 \
+\ls1\ilvl0
+\f2\b\fs36 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Upload the document(s) along with your Lab to Canvas.
+\f1\b0\fs26\fsmilli13333 \cf3 \
+\ls1\ilvl0
+\f2\b\fs36 \cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Only ONE partner submits the lab assignment on Canvas. Please make sure both your names are on it.
+\f1\b0\fs26\fsmilli13333 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs64 \cf2 \
+Part 1: HashTable.h
+\fs36 \cf7 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Copy and paste the following code into a header file named HashTable.h
+\f1\fs26\fsmilli13333 \cf3 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f0\fs36 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Note that we are now declaring an array of BSTs rather than an array of Lists in the private section of the class.
+\f1\fs26\fsmilli13333 \cf3 \
+\ls2\ilvl0
+\f0\fs36 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Please do not alter this file in any way or you may not receive credit for this lab
+\f1\fs26\fsmilli13333 \cf3 \
+\ls2\ilvl0
+\f0\fs36 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+For this lab, you will implement each of the hash table functions whose prototypes are in HashTable.h.
+\f1\fs26\fsmilli13333 \cf3 \
+\ls2\ilvl0
+\f0\fs36 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Write these functions in a file named HashTable.cpp.
+\f1\fs26\fsmilli13333 \cf3 \
+\ls2\ilvl0
+\f0\fs36 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Note that you will update your HashTable.cpp file from Lab 7 to call the BST functions, not the List functions.
+\f1\fs26\fsmilli13333 \cf3 \
+\pard\tx940\tx1440\pardeftab720\li1440\fi-1440\partightenfactor0
+\ls2\ilvl1
+\f0\fs36 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+Why will this change give you a slight advantage in efficiency?
+\f1\fs26\fsmilli13333 \cf3 \
+\ls2\ilvl1
+\f0\fs36 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u9702 	}\expnd0\expndtw0\kerning0
+What other advantage does using an array of BSTs rather than an array of Lists offer?
+\f1\fs26\fsmilli13333 \cf3 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f0\fs36 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Please test each hash table function as you write it in a file named HashTest.cpp (which should include your main function).
+\f1\fs26\fsmilli13333 \cf3 \
+\ls2\ilvl0
+\f0\fs36 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Additionally, you will need to include your BST.h and the files Book.h and Book.cpp in the same project as your Hash Table.
+\f1\fs26\fsmilli13333 \cf3 \
+\ls2\ilvl0
+\f0\fs36 \cf7 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+To keep things simple, the size of the table is defined to be only 10 for this assignment. According to the rule of thumb defined in class, the size should be changed for your project to be roughly 2-3 times the number of projected entries to the table.
+\f1\fs26\fsmilli13333 \cf3 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs36 \cf7 #ifndef HASHTABLE_H_\
+#define HASHTABLE_H_\
+\
+#include <string>\
+#include "BST.h"\
+#include "Book.h"\
+using namespace std;\
+\
+class HashTable \{\
+public:\
+\'a0\'a0\'a0 /**Constructors*/\
+\
+\'a0\'a0\'a0 HashTable()\{\}\
+\'a0\'a0\'a0 //constructor\
+\
+\'a0\'a0\'a0 ~HashTable()\{\}\
+\'a0\'a0\'a0 //destructor\
+\
+\
+\'a0\'a0\'a0 /**Access Functions*/\
+\
+\'a0\'a0\'a0 int hash(string key) const;\
+\'a0\'a0\'a0 //returns the hash value for the given key\
+\'a0\'a0\'a0 //the hash value is the sum of\
+\'a0\'a0\'a0 //of the ASCII values of each char in the key\
+\'a0\'a0\'a0 //% the size the of the table\
+\'a0\'a0\'a0 //Key for this table: title + author\
+\
+\'a0\'a0\'a0 int countBucket(int index) const;\
+\'a0\'a0\'a0 //counts the number of Books at this index\
+\'a0\'a0\'a0 //returns the count\
+\'a0\'a0\'a0 //pre: 0<= index < SIZE\
+\
+\'a0\'a0\'a0 int search(Book b) const;\
+\'a0\'a0\'a0 //Searches for b in the table\
+\'a0\'a0\'a0 //returns the index at which b is located\
+\'a0\'a0\'a0 //returns -1 if b is not in the table\
+\
+\'a0\'a0\'a0 /**Manipulation Procedures*/\
+\
+\'a0\'a0\'a0 void insert(Book b);\
+\'a0\'a0\'a0 //inserts a new book into the table\
+\'a0\'a0\'a0 //calls the hash function on the key to determine\
+\'a0\'a0\'a0 //the correct bucket\
+\
+\'a0\'a0\'a0 void remove(Book b);\
+\'a0\'a0\'a0 //removes b from the table\
+\'a0\'a0\'a0 //calls the hash function on the key to determine\
+\'a0\'a0\'a0 //the correct bucket\
+\'a0\'a0\'a0 //pre: b is in the table\
+\
+\'a0\'a0\'a0 /**Additional Functions*/\
+\
+\'a0\'a0\'a0 void printBucket(ostream& out, int index) const;\
+\'a0\'a0\'a0 
+\f4\b //Prints all the books at index according to inOrderPrint
+\f3\b0 \
+\'a0\'a0\'a0 //pre: 0<= index < SIZE\
+\'a0\'a0\'a0 //Should print according to the following formula:\
+\'a0\'a0\'a0 //Prints each book at that index in the format:\
+\'a0\'a0\'a0 //<title> by <author>\
+\'a0\'a0\'a0 //$<X.XX>\
+\'a0\'a0\'a0 //ISBN#: <isbn>\
+\'a0\'a0\'a0 //followed by a blank line\
+\
+\'a0\'a0\'a0 void printTable(ostream& out) const;\
+\'a0\'a0\'a0 //Prints the first book at each index\
+\'a0\'a0\'a0 //along with a count of the total books\
+\'a0\'a0\'a0 //at each index by calling count_bucket\
+\'a0\'a0\'a0 //as a helper function\
+\'a0\'a0\'a0 //Prints in the format:\
+\'a0\'a0\'a0 //Books in the Catalogue:\
+\'a0\'a0\'a0 //<new line>\
+\'a0\'a0\'a0 //Group <bucket>\
+\'a0\'a0\'a0 //<title> by <author>\
+\'a0\'a0\'a0 //$<X.XX>\
+\'a0\'a0\'a0 //ISBN: <isbn>\
+\'a0\'a0\'a0 //+<number of elements at this index> -1 more similar book(s)\
+\'a0\'a0\'a0 //<new line><new line><new line>\
+\
+private:\
+\'a0\'a0\'a0 static const int SIZE = 10;\
+\'a0\'a0\'a0 
+\f4\b BST<Book> Table[SIZE];
+\f3\b0 \
+\};\
+\
+#endif /* HASHTABLE_H_ */\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs64 \cf2 \
+Part 2: Catalogue.cpp\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\fs36 \cf3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Working with the catalogue.txt file provided above, write a user interface that works like the example below.
+\f1\fs26\fsmilli13333 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f0\fs36 \cf3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+This user interface must use a parallel BST and hash table into which you will insert the books from catalogue.txt to pre-populate the catalogue.
+\f1\fs26\fsmilli13333 \
+\ls3\ilvl0
+\f0\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Catalogue.cpp must contain a main function that offers a list of options to the user.
+\f1\fs26\fsmilli13333 \
+\ls3\ilvl0
+\f0\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Therefore, at the top of main in Catalogue.cpp, you will write:
+\f1\fs26\fsmilli13333 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs36 \cf3 int main()\{\
+\
+\'a0\'a0\'a0 HashTable ht;\
+\'a0\'a0\'a0 BST<Book> bst;
+\f1\fs26\fsmilli13333 \
+
+\f0\fs36 //rest of code\
+\}
+\f1\fs26\fsmilli13333 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls4\ilvl0
+\f0\fs36 \cf3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Option 1: Browse catalogue calls the preOrderPrint function of the BST to display the records in order. Note that you may alter the preOrderPrint function from BST.h so that each element prints on a separate line.
+\f1\fs26\fsmilli13333 \
+\ls4\ilvl0
+\f0\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Option 2: Insert a new book calls the insert function for both the hash table and BST to insert a new book in both structures.
+\f1\fs26\fsmilli13333 \
+\ls4\ilvl0
+\f0\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Option 3: Remove a book calls the remove function for both the hash table and BST to remove the book from both structures.
+\f1\fs26\fsmilli13333 \
+\ls4\ilvl0
+\f0\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Option 4: Search for a book calls the search function of the hash table (not the BST).
+\f1\fs26\fsmilli13333 \
+\ls4\ilvl0
+\f0\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Option 5: Writes the current contents of the BST to catalogue.txt before exiting, with the message "Happy Reading!"
+\f1\fs26\fsmilli13333 \
+\ls4\ilvl0
+\f0\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+After the user makes a selection, the menu should loop around again to allow the user to continue working with the hash table of books.
+\f1\fs26\fsmilli13333 \
+\ls4\ilvl0
+\f0\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Additionally, you should add some error checking if the user enters an option other than 1-5 or enters text instead of a numerical input for the option number.
+\f1\fs26\fsmilli13333 \
+\ls4\ilvl0
+\f0\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Please see the example output below for more information.
+\f1\fs26\fsmilli13333 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs36 \cf3 Welcome to the Best Reads App!\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: 8\
+\
+Invalid input.\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: 10\
+\
+Invalid input.\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: one\
+\
+Please enter numbers not letters\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: two\
+\
+Please enter numbers not letters\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: 1\
+\
+Here is an alphabetical list of the books in our catalogue:\
+\
+A Face like Glass by Frances Hardinge\
+$15.95\
+ISBN#: 4455443\
+\
+A Room with a View by E.M. Forster\
+$7.50\
+ISBN#: 1177889\
+\
+Bleak House by Charles Dickens\
+$8.99\
+ISBN#: 3567897\
+\
+Fangirl by Rainbow Rowell\
+$10.79\
+ISBN#: 2413725\
+\
+Jane Eyre by Charlotte Bronte\
+$7.90\
+ISBN#: 2345674\
+\
+Lady Audley's Secret by Mary Elizabeth Braddon\
+$5.50\
+ISBN#: 1212134\
+\
+Middlemarch by George Elliot\
+$12.50\
+ISBN#: 1256743\
+\
+Murder on the Orient Express by Agatha Christie\
+$2.99\
+ISBN#: 9837583\
+\
+Our Souls at Night by Kent Haruf\
+$11.99\
+ISBN#: 7847489\
+\
+Outlander by Diana Galbadon\
+$19.95\
+ISBN#: 5466565\
+\
+Ramona Blue by Julie Murphy\
+$9.99\
+ISBN#: 9328311\
+\
+Rebecca by Daphe Dumaurier\
+$5.50\
+ISBN#: 3242382\
+\
+The Hunger Games by Suzanne Collins\
+$6.90\
+ISBN#: 4232322\
+\
+The Time in Between by Maria Duenas\
+$9.86\
+ISBN#: 4345344\
+\
+The Woman in White by Wilkie Collins\
+$10.75\
+ISBN#: 3256789\
+\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: 2\
+\
+Enter the title: Harry Potter\
+Enter the author: J.K. Rowling\
+Enter the price: 8.99\
+Enter the isbn: 4222222\
+\
+Harry Potter has been added to the catalogue\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: 1\
+\
+Here is an alphabetical list of the books in our catalogue:\
+\
+A Face like Glass by Frances Hardinge\
+$15.95\
+ISBN#: 4455443\
+\
+A Room with a View by E.M. Forster\
+$7.50\
+ISBN#: 1177889\
+\
+Bleak House by Charles Dickens\
+$8.99\
+ISBN#: 3567897\
+\
+Fangirl by Rainbow Rowell\
+$10.79\
+ISBN#: 2413725\
+\
+Harry Potter by J.K. Rowling\
+$8.99\
+ISBN#: 4222222\
+\
+Jane Eyre by Charlotte Bronte\
+$7.90\
+ISBN#: 2345674\
+\
+Lady Audley's Secret by Mary Elizabeth Braddon\
+$5.50\
+ISBN#: 1212134\
+\
+Middlemarch by George Elliot\
+$12.50\
+ISBN#: 1256743\
+\
+Murder on the Orient Express by Agatha Christie\
+$2.99\
+ISBN#: 9837583\
+\
+Our Souls at Night by Kent Haruf\
+$11.99\
+ISBN#: 7847489\
+\
+Outlander by Diana Galbadon\
+$19.95\
+ISBN#: 5466565\
+\
+Ramona Blue by Julie Murphy\
+$9.99\
+ISBN#: 9328311\
+\
+Rebecca by Daphe Dumaurier\
+$5.50\
+ISBN#: 3242382\
+\
+The Hunger Games by Suzanne Collins\
+$6.90\
+ISBN#: 4232322\
+\
+The Time in Between by Maria Duenas\
+$9.86\
+ISBN#: 4345344\
+\
+The Woman in White by Wilkie Collins\
+$10.75\
+ISBN#: 3256789\
+\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: 3\
+\
+Enter the title of the book to remove: Murder on the Orient Express\
+Enter the author: Agatha Christie\
+true\
+\
+Murder on the Orient Express has been removed from the catalogue\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: 1\
+\
+Here is an alphabetical list of the books in our catalogue:\
+\
+A Face like Glass by Frances Hardinge\
+$15.95\
+ISBN#: 4455443\
+\
+A Room with a View by E.M. Forster\
+$7.50\
+ISBN#: 1177889\
+\
+Bleak House by Charles Dickens\
+$8.99\
+ISBN#: 3567897\
+\
+Fangirl by Rainbow Rowell\
+$10.79\
+ISBN#: 2413725\
+\
+Harry Potter by J.K. Rowling\
+$8.99\
+ISBN#: 4222222\
+\
+Jane Eyre by Charlotte Bronte\
+$7.90\
+ISBN#: 2345674\
+\
+Lady Audley's Secret by Mary Elizabeth Braddon\
+$5.50\
+ISBN#: 1212134\
+\
+Middlemarch by George Elliot\
+$12.50\
+ISBN#: 1256743\
+\
+Our Souls at Night by Kent Haruf\
+$11.99\
+ISBN#: 7847489\
+\
+Outlander by Diana Galbadon\
+$19.95\
+ISBN#: 5466565\
+\
+Ramona Blue by Julie Murphy\
+$9.99\
+ISBN#: 9328311\
+\
+Rebecca by Daphe Dumaurier\
+$5.50\
+ISBN#: 3242382\
+\
+The Hunger Games by Suzanne Collins\
+$6.90\
+ISBN#: 4232322\
+\
+The Time in Between by Maria Duenas\
+$9.86\
+ISBN#: 4345344\
+\
+The Woman in White by Wilkie Collins\
+$10.75\
+ISBN#: 3256789\
+\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: 4\
+\
+Enter the title of the book: Murder on the Orient Express\
+Enter the author: Agatha Christie\
+\
+Murder on the Orient Express is not in the catalogue\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: 4\
+\
+Enter the title of the book: Harry Potter\
+Enter the author: J.K. Rowling\
+\
+Harry Potter is in the catalogue\
+\
+What would you like to do?\
+1. Browse catalogue by title\
+2. Insert a new book\
+3. Remove a book\
+4. Search for a book\
+5. Quit\
+\
+Enter your choice: 5\
+\
+\
+Happy reading!
+\f1\fs26\fsmilli13333 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\fs36 \cf3 The above should output the current catalogue to catalogue.txt using inOrderPrint:
+\fs26\fsmilli13333 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs36 \cf3 A Face like Glass by Frances Hardinge\
+$15.95\
+ISBN#: 4455443\
+\
+A Room with a View by E.M. Forster\
+$7.50\
+ISBN#: 1177889\
+\
+Bleak House by Charles Dickens\
+$8.99\
+ISBN#: 3567897\
+\
+Fangirl by Rainbow Rowell\
+$10.79\
+ISBN#: 2413725\
+\
+Harry Potter by J.K. Rowling\
+$8.99\
+ISBN#: 4222222\
+\
+Jane Eyre by Charlotte Bronte\
+$7.90\
+ISBN#: 2345674\
+\
+Lady Audley's Secret by Mary Elizabeth Braddon\
+$5.50\
+ISBN#: 1212134\
+\
+Middlemarch by George Elliot\
+$12.50\
+ISBN#: 1256743\
+\
+Our Souls at Night by Kent Haruf\
+$11.99\
+ISBN#: 7847489\
+\
+Outlander by Diana Galbadon\
+$19.95\
+ISBN#: 5466565\
+\
+Ramona Blue by Julie Murphy\
+$9.99\
+ISBN#: 9328311\
+\
+Rebecca by Daphe Dumaurier\
+$5.50\
+ISBN#: 3242382\
+\
+The Hunger Games by Suzanne Collins\
+$6.90\
+ISBN#: 4232322\
+\
+The Time in Between by Maria Duenas\
+$9.86\
+ISBN#: 4345344\
+\
+The Woman in White by Wilkie Collins\
+$10.75\
+ISBN#: 3256789\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs26\fsmilli13333 \cf3 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs64 \cf2 What to Submit
+\f1\fs26\fsmilli13333 \cf3 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls5\ilvl0
+\fs36 \cf3 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Once you are certain your program is working as shown above, upload your files to Canvas under Lab 8.
+\fs26\fsmilli13333 \
+\ls5\ilvl0
+\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+You must submit the following files: Book.cpp, HashTable.cpp, HashTest.cpp, BST.h, Catalogue.cpp
+\fs26\fsmilli13333 \
+\ls5\ilvl0
+\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+Please do not submit HashTable.h or Book.h or catalogue.txt as I will assume that these files are unaltered from the ones provided (no points if you alter these header files).
+\fs26\fsmilli13333 \
+\ls5\ilvl0
+\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+You will receive 50 points for the updated HashTable.cpp.
+\fs26\fsmilli13333 \
+\ls5\ilvl0
+\fs36 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+You will receive 50 points for a correct Catalogue.cpp that works identically to the example above.
+\fs26\fsmilli13333 \
+\pard\pardeftab720\partightenfactor0
+\cf3 \
+}

@@ -1,0 +1,74 @@
+The Time in Between
+Maria Duenas
+9.86
+4345344
+
+Bleak House
+Charles Dickens
+8.99
+3567897
+
+Rebecca
+Daphe Dumaurier
+5.50
+3242382
+
+A Room with a View
+E.M. Forster
+7.50
+1177889
+
+Outlander
+Diana Galbadon
+19.95
+5466565
+
+Jane Eyre
+Charlotte Bronte
+7.90
+2345674
+
+The Hunger Games
+Suzanne Collins
+6.90
+4232322
+
+The Woman in White
+Wilkie Collins
+10.75
+3256789
+
+A Face like Glass
+Frances Hardinge
+15.95
+4455443
+
+Lady Audley's Secret
+Mary Elizabeth Braddon
+5.50
+1212134
+
+Agatha Christie
+Murder on the Orient Express
+2.99
+9837583
+
+Middlemarch
+George Elliot
+12.50
+1256743
+
+Our Souls at Night
+Kent Haruf
+11.99
+7847489
+
+Fangirl
+Rainbow Rowell
+10.79
+2413725
+
+Ramona Blue
+Julie Murphy
+9.99
+9328311
