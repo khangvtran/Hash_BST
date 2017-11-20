@@ -226,6 +226,50 @@ What would you like to do?
 4. Search for a book
 5. Quit
 
+Enter your choice: 8
+
+Invalid input
+
+What would you like to do?
+1. Browse catalogue by title
+2. Insert a new book
+3. Remove a book
+4. Search for a book
+5. Quit
+
+Enter your choice: 10
+
+Invalid input
+
+What would you like to do?
+1. Browse catalogue by title
+2. Insert a new book
+3. Remove a book
+4. Search for a book
+5. Quit
+
+Enter your choice: one
+
+Please enter numbers not letters
+
+What would you like to do?
+1. Browse catalogue by title
+2. Insert a new book
+3. Remove a book
+4. Search for a book
+5. Quit
+
+Enter your choice: two
+
+Please enter numbers not letters
+
+What would you like to do?
+1. Browse catalogue by title
+2. Insert a new book
+3. Remove a book
+4. Search for a book
+5. Quit
+
 Enter your choice: 1
 Here is an alphabetical list of the books in our catalogue:
 
@@ -289,20 +333,6 @@ The Woman in White by Wilkie Collins
 $10.75
 ISBN#: 3256789
 
-
-
-What would you like to do?
-1. Browse catalogue by title
-2. Insert a new book
-3. Remove a book
-4. Search for a book
-5. Quit
-
-Enter your choice: 4
-Enter the title of the book to search: a a
-Enter the author: b b
-a a is not in the catalogue.
-Here
 
 
 What would you like to do?
@@ -313,25 +343,11 @@ What would you like to do?
 5. Quit
 
 Enter your choice: 2
-Enter the title: a a
-Enter the author: b b
-Enter the price: 1
-Enter the isbn: 1
-a a has been added to the catalogue
-
-
-What would you like to do?
-1. Browse catalogue by title
-2. Insert a new book
-3. Remove a book
-4. Search for a book
-5. Quit
-
-Enter your choice: 4
-Enter the title of the book to search: a a
-Enter the author: b b
-a a is found at group 5 (or index 4)
-Here
+Enter the title: Harry Potter
+Enter the author: J.K. Rowling
+Enter the price: 8.99
+Enter the isbn: 4222222
+Harry Potter has been added to the catalogue
 
 
 What would you like to do?
@@ -363,6 +379,10 @@ ISBN#: 3567897
 Fangirl by Rainbow Rowell
 $10.79
 ISBN#: 2413725
+
+Harry Potter by J.K. Rowling
+$8.99
+ISBN#: 4222222
 
 Jane Eyre by Charlotte Bronte
 $7.90
@@ -403,10 +423,6 @@ ISBN#: 4345344
 The Woman in White by Wilkie Collins
 $10.75
 ISBN#: 3256789
-
-a a by b b
-$1.00
-ISBN#: 1
 
 
 
@@ -418,9 +434,9 @@ What would you like to do?
 5. Quit
 
 Enter your choice: 3
-Enter the title of the book to remove: a a
-Enter the author: b b
-a a has been removed from the catalogue
+Enter the title of the book to remove: The Woman in White
+Enter the author: Wilkie Collins
+The Woman in White has been removed from the catalogue
 
 
 What would you like to do?
@@ -452,6 +468,10 @@ ISBN#: 3567897
 Fangirl by Rainbow Rowell
 $10.79
 ISBN#: 2413725
+
+Harry Potter by J.K. Rowling
+$8.99
+ISBN#: 4222222
 
 Jane Eyre by Charlotte Bronte
 $7.90
@@ -489,10 +509,6 @@ The Time in Between by Maria Duenas
 $9.86
 ISBN#: 4345344
 
-The Woman in White by Wilkie Collins
-$10.75
-ISBN#: 3256789
-
 
 
 What would you like to do?
@@ -503,10 +519,22 @@ What would you like to do?
 5. Quit
 
 Enter your choice: 4
-Enter the title of the book to search: a a
-Enter the author: b b
-a a is not in the catalogue.
-Here
+Enter the title of the book to search: The Woman in White
+Enter the author: Wilkie Collins
+The Woman in White is not in the catalogue.
+
+
+What would you like to do?
+1. Browse catalogue by title
+2. Insert a new book
+3. Remove a book
+4. Search for a book
+5. Quit
+
+Enter your choice: 4
+Enter the title of the book to search: Harry Potter
+Enter the author: J.K. Rowling
+Harry Potter is found at group 10 (or index 9)
 
 
 What would you like to do?
@@ -517,8 +545,70 @@ What would you like to do?
 5. Quit
 
 Enter your choice: 5
+A Face like Glass by Frances Hardinge
+$15.95
+ISBN#: 4455443
+
+A Room with a View by E.M. Forster
+$7.50
+ISBN#: 1177889
+
+Agatha Christie by Murder on the Orient Express
+$2.99
+ISBN#: 9837583
+
+Bleak House by Charles Dickens
+$8.99
+ISBN#: 3567897
+
+Fangirl by Rainbow Rowell
+$10.79
+ISBN#: 2413725
+
+Harry Potter by J.K. Rowling
+$8.99
+ISBN#: 4222222
+
+Jane Eyre by Charlotte Bronte
+$7.90
+ISBN#: 2345674
+
+Lady Audley's Secret by Mary Elizabeth Braddon
+$5.50
+ISBN#: 1212134
+
+Middlemarch by George Elliot
+$12.50
+ISBN#: 1256743
+
+Our Souls at Night by Kent Haruf
+$11.99
+ISBN#: 7847489
+
+Outlander by Diana Galbadon
+$19.95
+ISBN#: 5466565
+
+Ramona Blue by Julie Murphy
+$9.99
+ISBN#: 9328311
+
+Rebecca by Daphe Dumaurier
+$5.50
+ISBN#: 3242382
+
+The Hunger Games by Suzanne Collins
+$6.90
+ISBN#: 4232322
+
+The Time in Between by Maria Duenas
+$9.86
+ISBN#: 4345344
+
+
 
 Happy Reading!!!
+
 
 */
 
