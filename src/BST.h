@@ -201,6 +201,7 @@ BST<bstdata>::~BST()
 	freeNode(root);
 }
 
+
 template <typename bstdata>
 void BST<bstdata>::freeNode(Node* root)
 {
@@ -212,6 +213,7 @@ void BST<bstdata>::freeNode(Node* root)
 		delete root;
 	}
 }
+
 
 
 
@@ -276,7 +278,7 @@ void BST<bstdata>::remove(bstdata data)
 {
 	assert(!isEmpty());
 	assert(search(data));      // isEmpty() is actually already enforced in this
-	deleteNode(root, data);
+	root = deleteNode(root, data);
 }
 
 template <class bstdata>
@@ -294,9 +296,16 @@ typename BST<bstdata>::Node* BST<bstdata>::deleteNode(Node* root, bstdata data)
 		}
 		else if (root->rightchild == NULL)
 		{
+
+
 			Node* temp = root->leftchild;
 			delete root;
 			return temp;
+			/*
+			Node* temp = root;
+			root = root->leftchild;
+			delete temp;
+			*/
 
 		}
 		else if (root->leftchild == NULL)
@@ -304,6 +313,12 @@ typename BST<bstdata>::Node* BST<bstdata>::deleteNode(Node* root, bstdata data)
 			Node* temp = root->rightchild;
 			delete root;
 			return temp;
+
+			/*
+			Node* temp = root;
+			root = root->rightchild;
+			delete temp;
+			*/
 		}
 		else
 		{

@@ -16,7 +16,7 @@ using namespace std;
 # include "HashTable.h"
 
 
-/*
+
 
 void readAndStore(ifstream& fin, HashTable& ht, BST<Book>& bst);
 void promptUser();
@@ -44,9 +44,6 @@ int main(){
 
     // read in the txt file and store the result into ht and bst
     readAndStore(fin, ht, bst);
-
-    //bst.inOrderPrint(cout);
-    //ht.printTable(cout);
 
     // user interactive
     int userInput = 0;
@@ -217,7 +214,7 @@ void searchObj(HashTable& ht)
 	cout << endl;
 }
 
-*/
+
 
 /*
 Welcome to the Best Reads App!
