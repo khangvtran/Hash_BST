@@ -49,14 +49,14 @@ int main() {
 
 
 	cout << endl <<  "********* Test search and remove ********" << endl;
-	cout << "- Search for the bucket of the hunger game. Should print out 9" << endl;
-	cout << ht.search(hg) << endl;
+	cout << "- Search for the bucket of Harry Potter. Should print out 9" << endl;
+	cout << ht.search(hp) << endl;
 
-	cout << "- remove the hunger game" << endl;      /////////////////////
-	ht.remove(hg);
+	cout << "- remove Harry Potter" << endl;      /////////////////////
+	ht.remove(hp);
 
-	cout << "- search hunger game again. Should print -1" << endl;
-	cout << ht.search(hg) << endl;
+	cout << "- search Harry Potter again. Should print -1" << endl;
+	cout << ht.search(hp) << endl;
 
 
 	cout << endl <<  "********* Test printBucket ********" << endl;
