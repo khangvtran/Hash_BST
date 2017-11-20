@@ -6,17 +6,20 @@
 CPP_SRCS += \
 ../src/Book.cpp \
 ../src/Catalogue.cpp \
-../src/HashTable.cpp 
+../src/HashTable.cpp \
+../src/HashTest.cpp 
 
 OBJS += \
 ./src/Book.o \
 ./src/Catalogue.o \
-./src/HashTable.o 
+./src/HashTable.o \
+./src/HashTest.o 
 
 CPP_DEPS += \
 ./src/Book.d \
 ./src/Catalogue.d \
-./src/HashTable.d 
+./src/HashTable.d \
+./src/HashTest.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

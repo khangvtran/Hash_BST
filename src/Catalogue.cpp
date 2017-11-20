@@ -6,11 +6,17 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
+
+
+
 # include <iostream>
 # include <fstream>
 using namespace std;
 
 # include "HashTable.h"
+
+
+/*
 
 void readAndStore(ifstream& fin, HashTable& ht, BST<Book>& bst);
 void promptUser();
@@ -211,6 +217,7 @@ void searchObj(HashTable& ht)
 	cout << endl;
 }
 
+*/
 
 /*
 Welcome to the Best Reads App!
@@ -517,3 +524,5 @@ Enter your choice: 5
 Happy Reading!!!
 
 */
+
+
