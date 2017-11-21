@@ -42,6 +42,7 @@ int main(){
     		exit(-1);
     }
 
+
     // read in the txt file and store the result into ht and bst
     readAndStore(fin, ht, bst);
 
@@ -95,8 +96,18 @@ int main(){
     			}
     			case 5:
     			{
-    				bst.inOrderPrint(cout);
+    			    ofstream fout;
+    			    fout.open("Catalogue.txt");
+    			    if (fout.fail())
+    			    {
+    			    		cout << "Fail to open output file" << endl;
+    			    		exit(-1);
+    			    }
+
+    				bst.inOrderPrint(fout);
     				cout << endl << "Happy Reading!!!" << endl;
+
+    				fout.close();
     				break;
     			}
     			}
@@ -109,6 +120,7 @@ int main(){
 
     	// close the file
     fin.close();
+
     return 0;
 }
 

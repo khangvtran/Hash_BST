@@ -81,7 +81,6 @@ void HashTable::printTable(ostream& out) const
 			out << "Group " << i+1 << endl;
 			out << Table[i].getRoot() << endl;
 			out << "+" << countBucket(i) - 1 <<" more similar book(s)" << endl << endl << endl;
-			//cout << "+" << Table.countBucket(i) - 1 <<" more similar book(s)" << endl << endl << endl;
 		}
 	}
 }

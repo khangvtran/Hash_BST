@@ -1,74 +1,60 @@
-The Time in Between
-Maria Duenas
-9.86
-4345344
+A Face like Glass by Frances Hardinge
+$15.95
+ISBN#: 4455443
 
-Bleak House
-Charles Dickens
-8.99
-3567897
+A Room with a View by E.M. Forster
+$7.50
+ISBN#: 1177889
 
-Rebecca
-Daphe Dumaurier
-5.50
-3242382
+Agatha Christie by Murder on the Orient Express
+$2.99
+ISBN#: 9837583
 
-A Room with a View
-E.M. Forster
-7.50
-1177889
+Bleak House by Charles Dickens
+$8.99
+ISBN#: 3567897
 
-Outlander
-Diana Galbadon
-19.95
-5466565
+Fangirl by Rainbow Rowell
+$10.79
+ISBN#: 2413725
 
-Jane Eyre
-Charlotte Bronte
-7.90
-2345674
+Jane Eyre by Charlotte Bronte
+$7.90
+ISBN#: 2345674
 
-The Hunger Games
-Suzanne Collins
-6.90
-4232322
+Lady Audley's Secret by Mary Elizabeth Braddon
+$5.50
+ISBN#: 1212134
 
-The Woman in White
-Wilkie Collins
-10.75
-3256789
+Middlemarch by George Elliot
+$12.50
+ISBN#: 1256743
 
-A Face like Glass
-Frances Hardinge
-15.95
-4455443
+Our Souls at Night by Kent Haruf
+$11.99
+ISBN#: 7847489
 
-Lady Audley's Secret
-Mary Elizabeth Braddon
-5.50
-1212134
+Outlander by Diana Galbadon
+$19.95
+ISBN#: 5466565
 
-Agatha Christie
-Murder on the Orient Express
-2.99
-9837583
+Ramona Blue by Julie Murphy
+$9.99
+ISBN#: 9328311
 
-Middlemarch
-George Elliot
-12.50
-1256743
+Rebecca by Daphe Dumaurier
+$5.50
+ISBN#: 3242382
 
-Our Souls at Night
-Kent Haruf
-11.99
-7847489
+The Hunger Games by Suzanne Collins
+$6.90
+ISBN#: 4232322
 
-Fangirl
-Rainbow Rowell
-10.79
-2413725
+The Time in Between by Maria Duenas
+$9.86
+ISBN#: 4345344
 
-Ramona Blue
-Julie Murphy
-9.99
-9328311
+The Woman in White by Wilkie Collins
+$10.75
+ISBN#: 3256789
+
